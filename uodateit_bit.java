@@ -17,7 +17,7 @@ public class uodateit_bit {
         // }
         int x = clearit_bit(n,i);
         int newbitwis = i<<bitwis;
-        return x|newbitwis; 
+        return x|newbitwis;  
     } 
     public static void main(String[] args) {
         System.out.print(updatebit(10, 2, 1));
