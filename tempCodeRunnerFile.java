@@ -1,1 +1,1 @@
-arr
+x & bitmask
