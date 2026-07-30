@@ -13,6 +13,9 @@ public class fastexponential {
     }
     public static void main(String[] args) {
         System.out.print(fastexpo(5, 2));
+        
     }
+
     
 }
+
