@@ -5,6 +5,7 @@ public class subsquences {
             return;
         }
         char currchar = str.charAt(index);
+        
         // to be 
         subsq(str, index+1, newstr+currchar);
         // not to be
