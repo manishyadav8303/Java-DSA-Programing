@@ -6,7 +6,7 @@ public class mergesort {
         }
         
         //kaam
-        int mid = st_i + (en_i-st_i)/2;
+        int mid = st_i + (en_i-st_i)/2; 
         divide(arr, st_i, mid);
         divide(arr, mid+1 , en_i);
         merge( arr, st_i,  mid ,  en_i);
@@ -52,10 +52,42 @@ public class mergesort {
         }
         System.out.println();
     }
+    public static void quicksort(int arr[] , int st_i , int en_i){
+        if(st_i >= en_i){
+            return;
+        }
+        int pivotIDX = partion(arr, st_i, en_i);
+
+        quicksort(arr, st_i, pivotIDX-1);
+        quicksort(arr, pivotIDX+1, en_i);
+    }
+
+
+    public static int partion(int arr[] , int st_i ,int en_i){
+        int pivot =  arr[en_i];
+        int i = st_i-1;
+        for( int j=st_i ; j<en_i ; j++){
+            if(arr[j] <=pivot){
+                i++;
+                int temp = arr[j];
+                arr[j]=arr[i];
+                arr[i] = temp;
+                 
+            }
+            
+        }
+        i++;
+            int temp = arr[i];
+                arr[i]=arr[en_i];
+                arr[en_i] = temp;
+                return i;
+
+    }
 
     public static void main(String[] args) {
         int arr[] = {3,5,2,9,8,7,-2};
-        divide(arr,0 , arr.length-1);
+        //divide(arr,0 , arr.length-1);
+        quicksort(arr, 0, arr.length-1);
         printarr(arr);
     }
 }
