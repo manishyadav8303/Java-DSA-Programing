@@ -13,7 +13,7 @@ public class gridway {
     return w1+w2;
     }
     public static void main(String[] args) {
-        int n = 3 , m= 3;
+        int n = 30 , m= 30;
         System.out.println(grid(n, m, 0, 0));
 
     }
