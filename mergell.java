@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import org.w3c.dom.Node;
 
 
-public class mergell {
+public class mergell {sta
     // public static class Node {
     // int data;
     // Node next;
