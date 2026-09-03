@@ -32,19 +32,19 @@ public class preordertree {
             newnNode.left = builtTree(nodes);
 
             newnNode.right = builtTree(nodes);
-            int root = newnNode;
+            //int root = newnNode;
 
             return newnNode;
         }
     }
-    public static void preorder(int[] nodes){
-        if(root = null){
-            return ;
-        }
-        System.out.println(root.data + " ");
-        preorder(root.left);
-        preorder(root.right);
-    }
+    // public static void preorder(int[] nodes){
+    //     if(root = null){
+    //         return ;
+    //     }
+    //     System.out.println(root.data + " ");
+    //     preorder(root.left);
+    //     preorder(root.right);
+    // }
 
     public static void main(String[] args) {
 
@@ -53,8 +53,8 @@ public class preordertree {
         binarytree tree = new binarytree();
 
         Node root = tree.builtTree(nodes);
-        preorder(nodes);
+       // preorder(nodes);
 
-       // System.out.println(root.data);
+        System.out.println(root.data);
     }
 }
