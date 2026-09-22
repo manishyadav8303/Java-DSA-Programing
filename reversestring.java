@@ -9,7 +9,7 @@ public class reversestring {
         revstr(str, idx-1);
     }
     public static void main(String[] args) {
-        String str = "aaabajaan";
+        String str = "aaajaan";
         revstr(str, str.length()-1);
     }
 }
