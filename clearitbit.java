@@ -11,7 +11,9 @@ public class clearitbit {
 
     public static void main(String[] args) {
        // System.out.println(clearit_bit(10, 1));
-       System.out.println(clearlast(15, 2));
+      // System.out.println(clearlast(15, 2));
+      int n = 12;
+      System.out.println(n&-n);
     }
     
 }
