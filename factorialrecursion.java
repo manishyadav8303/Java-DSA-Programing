@@ -4,7 +4,7 @@ public class factorialrecursion {
         if( n ==0){
             return 1;
         }
-        int fom = fcat(n-1);
+      //  int fom = fcat(n-1);
         int fc = n*fcat(n-1);
         return fc;
     }
