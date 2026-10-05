@@ -16,8 +16,20 @@ public static void printcom(String str , int idx , String combination){
         printcom(str, idx+1, combination+map.charAt(i));
     }
 }
+public static  void printr(String str , int idx , String combination){
+    if(idx==str.length()){
+        System.out.println(combination);
+        return ;
+    }
+    char curr = str.charAt(idx);
+    String map = keypad[curr-'0'];
+    for(int i =0 ; i<map.length() ; i++){
+        printr(str , idx+1 , combination+map.charAt(i));
+    }
+}
 public static void main(String[] args) {
-    String str = "2";
-    printcom(str, 0, "");
+    String str = "234";
+  //  printcom(str, 0, "");
+  printr(str , 0 , "");
 }
 }
