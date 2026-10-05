@@ -21,7 +21,7 @@ public static void firstlast(String str , int index , char element){
 }
 
 public static void main(String[] args) {
-    String str = "aama";
+    String str = "aamahjb";
     firstlast(str, 0, 'a');
 }
 }
