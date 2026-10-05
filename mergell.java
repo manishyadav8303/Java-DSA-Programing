@@ -4,15 +4,15 @@ import java.util.LinkedList;
 import org.w3c.dom.Node;
 
 
-public class mergell {sta
-    // public static class Node {
-    // int data;
-    // Node next;
+public class mergell {
+    public static class Node {
+    int data;
+    Node next;
 
-    // public Node(int data) {
-    //     this.data = data;
-    //     this.next = null;
-    // }
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
 }
     private static Node getmid(Node head){
         Node fast = head.next;
