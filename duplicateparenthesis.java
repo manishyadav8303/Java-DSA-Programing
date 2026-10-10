@@ -41,5 +41,6 @@ public class duplicateparenthesis {
 
         String str = "(a+b)";
         System.out.println(dup(str));
+        // print statement
     }
 }
