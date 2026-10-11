@@ -29,7 +29,7 @@ public class diamond {
                 
             }
 
-            // space
+            // space 
             for(int j = 1 ; j<=n-i ; j++ ){
                 System.out.print(" ");
         }
@@ -40,6 +40,7 @@ public class diamond {
     
 }
 public static void main(String[] args) {
+    //caling
     diamo(2);
 }
 }
