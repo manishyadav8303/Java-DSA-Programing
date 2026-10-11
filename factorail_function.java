@@ -18,6 +18,7 @@ public class factorail_function {
         int bin = fact_n /(fact_c*fact_r);
         return bin;
     }
+    //printing value
     public static void main(String[] args) {
         System.out.println(bincoff(5 , 2));
         
