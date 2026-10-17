@@ -52,7 +52,7 @@ public class subtree {
         if(!isIdentical(root.right, subroot.right)){
             return false;
         }
-        if(!isIdentical(root.right, subroot.right)){
+        if(!isIdentical(root.left, subroot.left)){
             return false;
         }
         return true;
