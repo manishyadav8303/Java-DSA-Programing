@@ -27,7 +27,7 @@ public class longest_word_prefix {
         if(root == null){
             return;
         }
-        for(int i = 0 ; i<26 ; i++){ // for lareget substring word like apply we strt with i= 25
+        for(int i = 0 ; i<26 ; i++){ // for lareget substring word like apply we strt with i= 25 
             if(root.children[i] != null && root.children[i].eow == true){
                 char ch = (char)(i+'a');
                 temp.append(ch);
