@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 public class dijistra {
     static class edge{
@@ -41,23 +42,60 @@ graph[8].add(new edge(8, 9, 1));
     graph[4].add(new edge(4, 5, 1));
       
     }
-    static class pair implements Comparable<pair> {
-        int n ; int path;
+   static class  pair implements Comparable<pair> {
+    int n ; //node
+    int path;
+   public pair(int n , int path){
+    this.n = n;
+    this.path = path;
+   }
+   @Override 
+   public int compareTo(pair p2){
+     return  this.path - p2.path ;
+   }
+    
+   }
+public static void dijistra(ArrayList<edge> [] graph , int src){
+    int dist[] = new int[graph.length];
+    for(int i = 0 ; i<graph.length ; i++){
+        if(i != src){
+            dist[i] = Integer.MAX_VALUE;
+        }
+    }
+    boolean vis[] = new boolean[graph.length];
+    PriorityQueue<pair> pq = new PriorityQueue<>();
+    pq.add(new pair(src, 0));
 
-        public pair(int n  , int path){
-            this.n = n;
-            this.path = path;
-        }
-        @Override
-        public int compareTo(pair p2){
-            return this.path -  p2.path;}
-        }
-        public static void dijistraa(ArrayList<edge>[] graph , innt s){
-            int dis[] = new int[graph.length];
-            for(int i = 0 ;i<graph.length ; i++){
-                if(i != src)
+while(!pq.isEmpty()){
+    pair curr = pq.remove();
+    if(!vis[curr.n]){
+        vis[curr.n] = true;
+
+        for(int i = 0 ;i<graph[curr.n].size() ; i ++){
+            edge e = graph[curr.n].get(i);
+            int u = e.src ; int v = e.dest; int wei = e.wei;
+            if(dist[u]+wei < dist[v]){
+                    dist[v] = dist[u]+wei;
+                    pq.add(new pair(v, dist[v]));
             }
+
         }
+    }
+}
+for(int i = 0 ;i<dist.length ; i++){
+    System.out.println(dist[i]+" ");
+}
+System.out.println();
+}
+
+public static void main(String[] args) {
+    int v = 10;
+    boolean[] vis = new boolean[v];
+    ArrayList<edge>[] graph = new ArrayList[v];
+
+    creategraph(graph);
+    dijistra(graph, 0);
+}
         }
 
         
