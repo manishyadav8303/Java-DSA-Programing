@@ -39,3 +39,4 @@ public class Lexicographically_smallest_string {
         System.out.println(smalle(5, 73));
     }
 }
+
