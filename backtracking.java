@@ -22,4 +22,4 @@ public class backtracking {
         printarr(arr);
     }
 }
-//edit
+
