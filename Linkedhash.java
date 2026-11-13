@@ -9,3 +9,4 @@ public class Linkedhash {
         System.out.println(map);
     }
 }
+
