@@ -66,7 +66,6 @@ graph[6].add(new edge(6, 5, 8));
         if(source == destination){
             return true;
         }
-        vis[source] = true;
         for(int i= 0 ;  i<edges[source].size() ; i++){
             edge e = edges[source].get(i);
             if(!vis[source] && validPath(n , edges , e.destination , destination ) ){
