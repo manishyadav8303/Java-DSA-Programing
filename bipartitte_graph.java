@@ -47,7 +47,7 @@ public class bipartitte_graph {
     public static boolean isbipartitte(ArrayList<edge> [] graph){
         Queue<Integer> q = new LinkedList<>();
         int clor[] = new int[graph.length];
-        for(int i = 0 ; i<clor.length ; i++){
+        for(int i = 0 ; i<clor.length ; i++){g
             clor[i] = -1;
         }
         for(int i = 0 ; i< graph.length ; i++){
