@@ -20,4 +20,4 @@ public class leet1376 {
         }
         return maxtime+informTime[curr];
     }
-}
+}//end
